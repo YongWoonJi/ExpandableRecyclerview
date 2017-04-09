@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ExpandableRecyclerview</string>
+    <integer name="padding">8</integer>
+</resources>

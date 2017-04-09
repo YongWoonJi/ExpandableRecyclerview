@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chat"
+        android:title="채팅하기" />
+    <item
+        android:id="@+id/note"
+        android:title="쪽지보내기" />
+    <item
+        android:id="@+id/add_group"
+        android:title="그룹연락처에 추가" />
+</menu>
