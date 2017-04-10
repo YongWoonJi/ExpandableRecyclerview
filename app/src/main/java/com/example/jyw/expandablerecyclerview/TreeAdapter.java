@@ -156,7 +156,7 @@ public class TreeAdapter extends BaseAdapter {
         if (node.children != null) {
             for (int i = 0; i < node.children.size(); i++) {
                 node.children.get(i).setExpand(expand);
-                setExpand(node.children.get(i), false);
+                setExpand(node.children.get(i), expand);
             }
         }
     }
@@ -183,8 +183,8 @@ public class TreeAdapter extends BaseAdapter {
                 index++;
             }
 
-            notifyItemRangeInserted(position + 1, index - position - 1);
             node.setExpand(true);
+            notifyItemRangeInserted(position + 1, index - position - 1);
         }
     }
 
@@ -202,8 +202,8 @@ public class TreeAdapter extends BaseAdapter {
                 removeCount++;
             }
 
-            notifyItemRangeRemoved(position + 1, nodeSize);
             node.setExpand(false);
+            notifyItemRangeRemoved(position + 1, nodeSize);
         }
     }
 
