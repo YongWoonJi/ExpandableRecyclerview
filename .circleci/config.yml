@@ -18,7 +18,7 @@ jobs:
         <<: *cache_key
     - run:
         name: Download Dependencies
-        command: ./gradlew dependencies
+        command: sudo chmode +x ./gradlew dependencies
     - save_cache:
         <<: *cache_key
         paths:
